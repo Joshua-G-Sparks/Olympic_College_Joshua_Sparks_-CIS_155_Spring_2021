@@ -1,0 +1,116 @@
+@charset "utf-8";
+
+/*
+    Name: Joshua Sparks
+    Date: 4/21/2021
+    Course: CIS 155 18193
+    Instructor: Linda Epps
+    Assignment: Project V1
+    Notes:
+*/
+
+.titleheader {
+    background-color: white;
+    margin: 1vw;
+    max-width: 90%;
+    overflow: auto;
+}
+
+/*
+    M2LO6  Demonstrate a CSS id and a CSS class selector (CSS, specify 2 times, show a use of id and a use of class, see 2-9b Attribute selectors)
+    class selector above
+*/
+/*
+    M2LO15 Apply colors using CSS (CSS, see 2-5 Working with Color in CSS)
+    background color above
+*/
+
+#titletext {
+    position: absolute;
+    top: 4vw;
+    float: left;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3vw;
+    margin-left: 8%;
+    font-weight: bold;
+    letter-spacing: 2vw;
+    word-spacing: 1vw;
+}
+
+/*
+    M2LO13 Demonstrate how CSS can change presentation of textual elements (CSS, these are styles that impact text that is rendered on the page)
+    letter spacing, word spacing, font weight, etc
+*/
+
+/*
+    M2LO6  Demonstrate a CSS id and a CSS class selector (CSS, specify 2 times, show a use of id and a use of class, see 2-9b Attribute selectors)
+    id selector above
+*/
+
+.titleimage {
+    float: right;
+    overflow: hidden;
+    margin-left: 5%;
+    max-width: 15%;
+    max-height: 15%;
+  }
+
+.navbar {
+    top: 18%;
+    width: 80%;
+    clear: both;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: rgb(0, 0, 0);
+    background-color: hsl(0, 100, 0);
+    /*
+        M2LO14 Demonstrate and explain the use of progressive enhancement in CSS (CSS, see 2-6 Employing Progressive Enhancement)
+        above, there are RGB and HSL color values. Browsers that do not support HSL color values will default to RGB in this case.
+    */
+    color: white;
+}
+
+nav {
+    display: block
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    display: inline;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+nav ul li:first-child {
+    font-weight: bold;
+}
+
+/*
+    M2LO11 Demonstrate a pseudo-classes and a pseudo-element selector (CSS, specify 2 times, show one pseudo-class and one pseudo-element, see 2-18 Using Pseudo-Classes and Pseudo-Elements)
+    pseudo-class above
+*/
+
+nav ul li a, a:visited, a:active {
+    text-decoration-style: dotted;
+    text-decoration-line: underline;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    color: white;
+}
+nav ul li a:hover {
+    background-color: white;
+    color: black;
+}
+
+article {
+    position: fixed;
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: white;
+    margin: 1vw;
+}
