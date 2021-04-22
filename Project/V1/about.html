@@ -4,7 +4,7 @@
     Course: CIS 155 18193
     Instructor: Linda Epps
     Assignment: Project V1
-    Notes: about page, this will talk about what the point of the website is and how the project is coming along.
+    Notes: About page, this will talk about what the point of the website is and how the project is coming along.
 
 -->
 
@@ -20,21 +20,25 @@
     <link href="styles.css" rel="stylesheet"/>
 
     <style>
-    body aside {
-        position: absolute;
-        font-family: Arial, Helvetica, sans-serif;
-        font-family: 'Courier New', Courier, monospace;
-        color: white;
-        font-size: 0.9vw;
-        right: 10%;
-        text-align: center;
-        width: 12vw;
-        margin-right: 1vw;
-        margin-left: 1vw;
-    }
-    body aside h1 {
-        font-size: 1.2vw;
-    }
+        body aside {
+            position: absolute;
+            font-family: Arial, Helvetica, sans-serif;
+            font-family: 'Courier New', Courier, monospace;
+            color: white;
+            font-size: 0.9vw;
+            right: 10%;
+            text-align: center;
+            width: 12vw;
+            margin-right: 1vw;
+            margin-left: 1vw;
+        }
+        body aside h1 {
+            font-size: 1.2vw;
+        }
+
+        aside ol li {
+            margin-bottom: 0.5vw;
+        }
     </style>
 </head>
 
@@ -56,27 +60,29 @@
     </header>
     <div id="content">
         <aside>
-            <h1>RESOLUTE MYSTIC<br>GOALS</h1>
+            <div class="heading1">RESOLUTE MYSTIC<br>GOALS</div>
             <div class="bigsymbol">&#9790;</div>
-            <p>
-                IN ORDER
+
+                <p>IN ORDER</p>
                 <ol style="text-align: left;font-size: small;">
                     <li>Learn aesthetically pleasing web design</li>
-                    <br>
                     <li>Have fun with hobbies</li>
-                    <br>
                     <li>Establish a blog design</li>
-                    <br>
                     <li>Make things look MYSTERIOUS.</li>
                 </ol>
-            </p>
+
             <!--
-                M1LO7 Demonstrate the use of ordered lists (HTML)
-                ordered list above
+                M1LO7 Demonstrate the use of ordered lists
+                Ordered list coded above.
+            -->
+            <!--
+                One may ask why I didn't use a list for previous renditions of the sidebar, such as on the homepage, especially since it housed a list of links.
+                Truth be told, making an unordered list for the links in the sidebar made the buttons too small to read, since I didn't want the links to span
+                more than a single line. Unordered lists add blank space to the side, which is sometimes not needed and just mess up the formatting.
             -->
         </aside>
         <article>
-            <h1>RESOLUTE MYSTIC v1</h1>
+            <h2 class="heading1">RESOLUTE MYSTIC v1</h2>
             <div class="subheading">4/22/2021 1:21am, Joshua Sparks, CIS 155</div>
             <p>I have finally gotten these pages to how I want them to look in a general sense.</p>
             <p>
@@ -104,7 +110,7 @@
             </p>
         </article>
         <article>
-            <h1>Attributions</h1>
+            <h2 class="heading1">Attributions</h2>
             <div class="subheading">Because I can't do everything myself. Links in the listed names.</div>
             <dl>
                 <dt><a href="https://www.rawpixel.com/image/440416/free-photo-image-moon-celestial-background-space">Crescent Moon</a></dt>
@@ -115,16 +121,10 @@
     <footer>
         <a href="#top" class="sidelinkbutton">jump to top of page</a>
         <!--
-            i know i am using the link button class that is designated for the sidebar
-            i am too lazy to rename it and it is useful outside of it's intended purpose
-            and the font size is too small for general use, too, so it is staying as
-            'sidelinkbutton' for now and probably forever
-
-            PS: this link SHOULD bring the user to the top of the page when there is
-            enough content on the page to create a scroll bar, to test this i will add
-            more test articles in content div
-
-            PPS: worked
+            I know I am using the link button class that is designated for the sidebar,
+            I am too lazy to rename it and it is useful outside of it's intended purpose.
+            The font size is too small for a button class, too, so it is staying as
+            'sidelinkbutton' for now.
         -->
     </footer>
 </body>
