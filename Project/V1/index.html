@@ -17,6 +17,24 @@
   <meta name="keywords" content="photography, writing, tabletop games" /> 
   <link href="styles.css" rel="stylesheet">
   <!--M1LO8 Demonstrate the use of external style sheets (HTML, note the external style sheet must exist and contain CSS)-->
+
+  <style>
+    body aside {
+        position: absolute;
+        font-family: Arial, Helvetica, sans-serif;
+        font-family: 'Courier New', Courier, monospace;
+        color: white;
+        font-size: 1vw;
+        right: 10%;
+        text-align: center;
+        width: 12vw;
+        margin-right: 1vw;
+        margin-left: 1vw;
+    }
+    body aside h1 {
+        font-size: 1.2vw;
+    }
+  </style>
 </head>
 
 <!--
@@ -58,10 +76,23 @@
             site navigation links above in nav element
         -->
     </header>
-
-    <article>
-        <p>test</p>
-        <p>test</p>
-    </article>
+    <div id="content">
+        <aside>
+            <h1>WHAT IS<br>RESOLUTE MYSTIC?</h1>
+            <p>
+                This is a sidebar. I may even put things here, later.
+                <br> <br>
+                Who knows?
+            </p>
+        </aside>
+        <article>
+            <p>test</p>
+            <p>test</p>
+        </article>
+        <article>
+            <p>test</p>
+            <p>test</p>
+        </article>
+    </div>
 </body>
 </html>
