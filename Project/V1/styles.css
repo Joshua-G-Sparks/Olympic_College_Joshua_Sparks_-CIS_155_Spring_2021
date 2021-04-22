@@ -75,8 +75,7 @@
     width: 70%;
     font-family: Arial, Helvetica, sans-serif;
     font-family: 'Courier New', Courier, monospace;
-    background-color: rgb(0, 0, 0);
-    background-color: hsl(0, 100, 0);
+    background-color: black;
     color: white;
 }
 
@@ -142,7 +141,7 @@ article {
     margin-bottom: 1vh;
 }
 
-article > h1::first-letter {
+article > .heading1::first-letter {
     font-size: 1.2vw;
 }
 
@@ -151,8 +150,9 @@ article > h1::first-letter {
     pseudo-element above
 */
 
-article > h1 {
+article > .heading1 {
     font-size: 1vw;
+    font-weight: bold;
 }
 
 article > dl > dt > a, article > dl > dt > a:visited, article > dl > dt > a:active {
@@ -184,9 +184,9 @@ footer {
 
 .subheading {
     font-size: 0.9vw;
-    margin-top: -1vw;
     font-style: italic;
     color: #565656;
+    margin-top: -1vw;
     margin-left: 1vw;
 }
 
@@ -194,6 +194,11 @@ footer {
     SIDEBAR SHENANIGANS
     see html for embedded sidebar shenanigans
 */
+
+aside .heading1 {
+    font-size: 1.25vw;
+    font-weight: bold;
+}
 
 a.sidelinkbutton, a:visited.sidelinkbutton, a:active.sidelinkbutton {
     text-decoration-style: dotted;
