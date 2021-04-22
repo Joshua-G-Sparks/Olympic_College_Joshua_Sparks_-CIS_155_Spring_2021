@@ -4,7 +4,7 @@
     Course: CIS 155 18193
     Instructor: Linda Epps
     Assignment: Project V1
-    Notes:
+    Notes: home page, this will serve as the landing.
 
 -->
 
@@ -12,19 +12,20 @@
 
 <html lang="en">
 <head>
-  <title>RESOLUTE MYSTIC</title>
-  <meta charset="utf-8">
-  <meta name="keywords" content="photography, writing, tabletop games" /> 
-  <link href="styles.css" rel="stylesheet">
-  <!--M1LO8 Demonstrate the use of external style sheets (HTML, note the external style sheet must exist and contain CSS)-->
+    <title>RESOLUTE MYSTIC</title>
+    <meta charset="utf-8"/>
+    <meta name="keywords" content="photography, writing, tabletop games, RESOLUTE MYSTIC" />
+    <meta name="author" content="Joshua Sparks"/>
+    <meta name="description" content="RESOLUTE MYSTIC is a class project site written by Joshua Sparks designed to showcase hobbies and interests."/>
+    <link href="styles.css" rel="stylesheet"/>
 
-  <style>
+    <style>
     body aside {
         position: absolute;
         font-family: Arial, Helvetica, sans-serif;
         font-family: 'Courier New', Courier, monospace;
         color: white;
-        font-size: 1vw;
+        font-size: 0.9vw;
         right: 10%;
         text-align: center;
         width: 12vw;
@@ -34,7 +35,7 @@
     body aside h1 {
         font-size: 1.2vw;
     }
-  </style>
+    </style>
 </head>
 
 <!--
@@ -51,7 +52,7 @@
         inline styling completed above
     -->
     <header>
-        <div class="titleheader">
+        <div class="titleheader" id="top">
             <h1 id="titletext"><br>RESOLUTE MYSTIC</h1>
             <!--i have no clue how to middle this text in CSS since it's floated, so have a line break instead-->
             <img src="moongraphic.png" alt="moongraphic" class="titleimage" id="moongraphic"/>
@@ -79,20 +80,79 @@
     <div id="content">
         <aside>
             <h1>WHAT IS<br>RESOLUTE MYSTIC?</h1>
+            <div class="bigsymbol">&#9790;</div>
+            <!--
+                M1LO10 Demonstrate the use of special characters from extended character sets (HTML, use entities, not cut-and-pasted unicode characters)
+                above is a special character showing a moon
+            -->
             <p>
-                This is a sidebar. I may even put things here, later.
-                <br> <br>
-                Who knows?
+                RESOLUTE MYSTIC is a place for me to showcase my interests, hobbies, and web page building skills.
             </p>
+            <a href="about.html" class="sidelinkbutton">Would you like to know more?</a>
+            <a href="https://www.youtube.com/watch?v=8FhGOV7fs64" class="sidelinkbutton">Would you like a polar bear?</a>
+            <a href="https://www.youtube.com/watch?v=g0uwGxbmdwQ" class="sidelinkbutton">aesthetic inspiration</a>
         </aside>
         <article>
-            <p>test</p>
-            <p>test</p>
+            <h1>heading</h1>
+            <div class="subheading">subheading</div>
+            <p>paragraph</p>
+            <p>paragraph</p>
         </article>
         <article>
-            <p>test</p>
-            <p>test</p>
+            <h1>heading</h1>
+            <div class="subheading">subheading</div>
+            <p>paragraph</p>
+            <p>paragraph</p>
+        </article>
+        <article>
+            <h1>heading</h1>
+            <div class="subheading">subheading</div>
+            <p>paragraph</p>
+            <p>paragraph</p>
+        </article>
+        <article>
+            <h1>heading</h1>
+            <div class="subheading">subheading</div>
+            <p>paragraph</p>
+            <p>paragraph</p>
+        </article>
+        <article>
+            <h1>heading</h1>
+            <div class="subheading">subheading</div>
+            <p>paragraph</p>
+            <p>paragraph</p>
+        </article>
+        <article>
+            <h1>heading</h1>
+            <div class="subheading">subheading</div>
+            <p>paragraph</p>
+            <p>paragraph</p>
+        </article>
+        <article>
+            <h1>heading</h1>
+            <div class="subheading">subheading</div>
+            <p>paragraph</p>
+            <p>paragraph</p>
         </article>
     </div>
+    <footer>
+        <a href="#top" class="sidelinkbutton">jump to top of page</a>
+        <!--
+            M1LO13 Demonstrate using 3 types of hyperlinks: site navigation, targeted location using ids, and external (HTML, this item should be specified 3 times, once on each type of link)
+            targeted location using the 'top' id above
+        -->
+        <!--
+            i know i am using the link button class that is designated for the sidebar
+            i am too lazy to rename it and it is useful outside of it's intended purpose
+            and the font size is too small for general use, too, so it is staying as
+            'sidelinkbutton' for now and probably forever
+
+            PS: this link SHOULD bring the user to the top of the page when there is
+            enough content on the page to create a scroll bar, to test this i will add
+            more test articles in content div
+
+            PPS: worked
+        -->
+    </footer>
 </body>
 </html>

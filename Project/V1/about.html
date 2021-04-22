@@ -1,0 +1,131 @@
+<!-- 
+    Name: Joshua Sparks
+    Date: 4/21/2021
+    Course: CIS 155 18193
+    Instructor: Linda Epps
+    Assignment: Project V1
+    Notes: about page, this will talk about what the point of the website is and how the project is coming along.
+
+-->
+
+<!doctype html>
+
+<html lang="en">
+<head>
+    <title>RESOLUTE MYSTIC</title>
+    <meta charset="utf-8"/>
+    <meta name="keywords" content="photography, writing, tabletop games, RESOLUTE MYSTIC" />
+    <meta name="author" content="Joshua Sparks"/>
+    <meta name="description" content="RESOLUTE MYSTIC is a class project site written by Joshua Sparks designed to showcase hobbies and interests."/>
+    <link href="styles.css" rel="stylesheet"/>
+
+    <style>
+    body aside {
+        position: absolute;
+        font-family: Arial, Helvetica, sans-serif;
+        font-family: 'Courier New', Courier, monospace;
+        color: white;
+        font-size: 0.9vw;
+        right: 10%;
+        text-align: center;
+        width: 12vw;
+        margin-right: 1vw;
+        margin-left: 1vw;
+    }
+    body aside h1 {
+        font-size: 1.2vw;
+    }
+    </style>
+</head>
+
+<body style="background-color: black;"> 
+    <header>
+        <div class="titleheader" id="top">
+            <h1 id="titletext">RESOLUTE MYSTIC<br><br>about</h1>
+            <img src="moongraphic.png" alt="moongraphic" class="titleimage" id="moongraphic"/>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">home</a></li>
+                <li><a href="writing.html">writing</a></li>
+                <li><a href="tabletop.html">tabletop</a></li>
+                <li><a href="photography.html">photography</a></li>
+                <li> <a href="about.html">about</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="content">
+        <aside>
+            <h1>RESOLUTE MYSTIC<br>GOALS</h1>
+            <div class="bigsymbol">&#9790;</div>
+            <p>
+                IN ORDER
+                <ol style="text-align: left;font-size: small;">
+                    <li>Learn aesthetically pleasing web design</li>
+                    <br>
+                    <li>Have fun with hobbies</li>
+                    <br>
+                    <li>Establish a blog design</li>
+                    <br>
+                    <li>Make things look MYSTERIOUS.</li>
+                </ol>
+            </p>
+            <!--
+                M1LO7 Demonstrate the use of ordered lists (HTML)
+                ordered list above
+            -->
+        </aside>
+        <article>
+            <h1>RESOLUTE MYSTIC v1</h1>
+            <div class="subheading">4/22/2021 1:21am, Joshua Sparks, CIS 155</div>
+            <p>I have finally gotten these pages to how I want them to look in a general sense.</p>
+            <p>
+                As a general layout, the front page serves as a landing page with navigation to all planned and current sites. The navbar is consistent through all pages, and I have 
+                established this layout you are seeing as a template for the rest of the site pages. The front page may serve as a general blog, each article shows a different
+                card-like structure that houses a heading and subheading. The subheading, as used here, can be used as an author name, date, and time marker.
+            </p>
+            <p>
+                I managed to get this card-like layout by setting the background color to be black and then coloring each element white, then applying copious amounts of margin and padding
+                properties.
+            </p>
+            <p>
+                The sidebar will change throughout the pages, but at the moment it serves as a secondary navbar on the front page that houses a link to the about page as well as a 
+                few youtube videos.
+            </p>
+            <p>
+                By far the most annoying thing to get working was the header and header image. It took me about five hours straight of just fiddling with it to manage to get it in place.
+                It does use positioning and float properties not yet taught in the class, something that I did not know was discouraged until after the fact. Good job, me.
+                The footer will have more things in it at some point, at the moment it just serves as a link back to the top of the page.
+            </p>
+            <p>
+                You may notice that links look like buttons when you hover over them. By applying the hover property of links in order to change the background color and text
+                color of said link as you hover over it, you can make it look like a box-like object within the navbar or wherever the link is placed by adding padding around the link.
+                This also makes the link area itself bigger and easier to click on. I think it looks nice, and hope to see this trick used in the other sites!
+            </p>
+        </article>
+        <article>
+            <h1>Attributions</h1>
+            <div class="subheading">Because I can't do everything myself. Links in the listed names.</div>
+            <dl>
+                <dt><a href="https://www.rawpixel.com/image/440416/free-photo-image-moon-celestial-background-space">Crescent Moon</a></dt>
+                <dd>The crescent moon in the header is a public domain image, originally captured by NASA and enhanced by rawpixel.</dd>
+            </dl>
+        </article>
+    </div>
+    <footer>
+        <a href="#top" class="sidelinkbutton">jump to top of page</a>
+        <!--
+            i know i am using the link button class that is designated for the sidebar
+            i am too lazy to rename it and it is useful outside of it's intended purpose
+            and the font size is too small for general use, too, so it is staying as
+            'sidelinkbutton' for now and probably forever
+
+            PS: this link SHOULD bring the user to the top of the page when there is
+            enough content on the page to create a scroll bar, to test this i will add
+            more test articles in content div
+
+            PPS: worked
+        -->
+    </footer>
+</body>
+</html>
