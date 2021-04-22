@@ -27,7 +27,14 @@
 
 #titletext {
     float: left;
+    font-family: Arial, Helvetica, sans-serif;
     font-family: 'Courier New', Courier, monospace;
+
+    /*
+        M2LO14 Demonstrate and explain the use of progressive enhancement in CSS (CSS, see 2-6 Employing Progressive Enhancement)
+        above, two fonts are called, the first will be used if the last is not supported by the browser (tested on firefox mobile, courier new is not displayed)
+    */
+
     font-size: 3vw;
     margin-left: 8%;
     font-weight: bold;
@@ -54,13 +61,10 @@
 
 .navbar {
     width: 70%;
+    font-family: Arial, Helvetica, sans-serif;
     font-family: 'Courier New', Courier, monospace;
     background-color: rgb(0, 0, 0);
     background-color: hsl(0, 100, 0);
-    /*
-        M2LO14 Demonstrate and explain the use of progressive enhancement in CSS (CSS, see 2-6 Employing Progressive Enhancement)
-        above, there are RGB and HSL color values. Browsers that do not support HSL color values will default to RGB in this case.
-    */
     color: white;
 }
 
@@ -99,8 +103,17 @@ nav ul li a:hover {
 }
 
 article {
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     padding: 20px;
     background-color: white;
     margin-left: 1vw;
     margin-right: 23.9vw;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
 }
+
+/* 
+    M2LO3 Demonstrate style precedence and inheritance in CSS (CSS, this item should be specified 2 times, once where precedence is applied and once where inheritance is applied; see 2-3d Style Specificity and Precedence, and 2-3e Style Inheritance)
+    inheritance displayed above - text rendered from children of the article element will display in arial or courier new unless otherwise specified.
+*/
