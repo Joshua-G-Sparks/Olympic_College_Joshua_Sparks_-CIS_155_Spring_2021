@@ -1,0 +1,260 @@
+@charset "utf-8";
+
+/*
+    Name: Joshua Sparks
+    Date: 5/4/2021
+    Course: CIS 155 18193
+    Instructor: Linda Epps
+    Assignment: Project V2
+    Notes: CSS stylesheet for the project, hopefully the only one.
+*/
+
+/*
+    TITLE PROPERTIES
+*/
+
+.titleheader {
+    background-color: white;
+    margin: 1vw;
+    max-width: 90%;
+    overflow: auto;
+}
+/* M3LO10 Demonstrate an overflow setting */
+/* Without the above overflow setting, title header does not appear. */
+
+#titletext {
+    float: left;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3vw;
+    margin-left: 8%;
+    font-weight: bold;
+    letter-spacing: 2vw;
+    word-spacing: 1vw;
+}
+
+
+.titleimage {
+    float: right;
+    margin-left: 5%;
+    max-width: 15vw;
+    max-height: 15%;
+}
+/* M3LO2 Demonstrate floating elements */
+/* Above float makes the image in the title header align to the right. */
+
+/*
+    NAV BAR
+*/
+
+.navbar {
+    width: 70%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: black;
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+
+nav ul > li {
+    display: inline;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+
+nav ul li a, nav ul li a:visited, nav ul li a:active {
+    text-decoration: none;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 2%;
+    padding-right: 2%;
+    color: white;
+}
+
+nav ul li:first-child a{
+    font-weight: bold;
+    text-decoration: none;
+}
+
+
+nav ul li a:hover {
+    background-color: white;
+    color: black;
+}
+
+/*
+    GENERAL PROPERTIES
+*/
+
+article {
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 20px;
+    background-color: white;
+    margin-left: 1vw;
+    margin-right: 23.9vw;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+}
+
+article > .heading1::first-letter {
+    font-size: 1.2vw;
+}
+
+
+article > .heading1 {
+    font-size: 1vw;
+    font-weight: bold;
+}
+
+article > dl > dt > a, article > dl > dt > a:visited, article > dl > dt > a:active {
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+article > dl > dt > a:hover {
+    color: #565656;
+}
+
+article p {
+    margin-right: 20vw;
+    font-size: 0.9vw;
+}
+
+#imagemap {
+    width: 200px;
+    height: 200px;
+}
+
+.bigsymbol {
+    font-size: 2vw;
+    font-weight: bolder;
+}
+
+#moony {
+  position:relative;
+  left:80vw;
+  z-index: 10;
+}
+
+/* M3LO8B Demonstrate relative positioning */
+/* above style rules will cause the #moony id sit behind the original sidebar position on the easter egg page */
+
+footer {
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    margin-left: 1vw;
+    padding-left: 1vw;
+}
+
+.subheading {
+    font-size: 0.85vw;
+    font-style: italic;
+    color: #565656;
+    margin-top: -1vw;
+    margin-left: 1vw;
+}
+
+/* PHOTOGRID SHENANIGANS */
+/*M3LO6 Demonstrate formatting a grid*/
+/*This creates a grid that aligns photos in a simple gallery format.*/
+.photogrid {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin-left: 1vw;
+  background-color: white;
+  margin-right: 23.9vw;
+  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Courier New', Courier, monospace;
+}
+
+.photogrid img {
+  max-width: 100%;
+  max-height: 100%;
+  border-style: solid;
+  border-width: 4px;
+  border-color: black;
+  border-radius: 2px;
+}
+
+/* M4LO3 Demonstrate the use of rounded corners for borders */
+
+
+.photogrid > div a:hover img {
+  opacity: 0.8;
+}
+/* M4LO6 Demonstrate the use of opacity/transparency for images */
+
+.photogrid > div > figure {
+  max-width: 100%;
+  max-height: 100%;
+  border: 1vw;
+  border-color: black;
+}
+
+.photogrid > div > figure > figcaption {
+  font-size: 0.9vw;
+  text-align: center;
+}
+
+.photogrid > #photo1 {
+  grid-row: 1/2;
+  grid-column: 1/2;
+}
+.photogrid > #photo2 {
+  grid-row: 1/2;
+  grid-column: 2/3;
+}
+.photogrid > #photo3 {
+  grid-row: 1/2;
+  grid-column: 3/4;
+}
+/*
+    SIDEBAR SHENANIGANS
+    see html for embedded sidebar shenanigans
+*/
+body aside {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-size: 0.9vw;
+    right: 10%;
+    text-align: center;
+    width: 12vw;
+    margin-right: 1vw;
+    margin-left: 1vw;
+}
+body aside h1 {
+    font-size: 1.2vw;
+}
+
+/* M3LO9 Demonstrate fixed, static, or inherited positioning */
+/* the above style rules causes the sidebar to follow the user using position: fixed */
+
+#content > aside .heading1 {
+    font-size: 1.25vw;
+    font-weight: bold;
+}
+
+a.sidelinkbutton, a:visited.sidelinkbutton, a:active.sidelinkbutton {
+    text-decoration-style: dotted;
+    text-decoration-line: underline;
+    padding: 0.5vw;
+    font-size: 0.6vw;
+    color: white;
+    line-height: 2vw;
+}
+
+a:hover.sidelinkbutton {
+    background-color: white;
+    color: black;
+}

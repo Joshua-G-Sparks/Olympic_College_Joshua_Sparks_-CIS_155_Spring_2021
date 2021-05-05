@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+h1, h2, header, nav, ul, ol, aside, footer, article, p, a {
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  overflow: visible;
+}
