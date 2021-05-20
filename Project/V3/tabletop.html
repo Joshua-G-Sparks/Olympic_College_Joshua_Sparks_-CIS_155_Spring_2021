@@ -1,0 +1,213 @@
+<!--
+    Name: Joshua Sparks
+    Date: 5/19/2021
+    Course: CIS 155 18193
+    Instructor: Linda Epps
+    Assignment: Project V3
+    Notes: This page is for displaying content related to tabletop gaming.
+
+-->
+
+<!doctype html>
+
+<html lang="en">
+<head>
+    <title>RESOLUTE MYSTIC</title>
+    <meta charset="utf-8"/>
+    <meta name="keywords" content="photography, writing, tabletop games, RESOLUTE MYSTIC" />
+    <meta name="author" content="Joshua Sparks"/>
+    <meta name="description" content="RESOLUTE MYSTIC is a class project site written by Joshua Sparks designed to showcase hobbies and interests."/>
+    <meta name="viewport" content="width=device-width"/>
+    <link href="reset.css" rel="stylesheet"/>
+    <link href="styles.css" rel="stylesheet"/>
+
+    <style>
+        body aside {
+            font-family: Arial, Helvetica, sans-serif;
+            font-family: 'Courier New', Courier, monospace;
+            color: white;
+            font-size: 0.9vw;
+            right: 10%;
+            text-align: center;
+            width: 12vw;
+            margin-right: 1vw;
+            margin-left: 1vw;
+        }
+        body aside h1 {
+            font-size: 1.2vw;
+        }
+    </style>
+</head>
+
+<body style="background-color: black;">
+
+    <header>
+        <div class="titleheader" id="top">
+            <h1 id="titletext"><br>RESOLUTE MYSTIC</h1>
+            <img src="moongraphic.png" alt="moongraphic" class="titleimage" id="moongraphic"/>
+        </div>
+        <nav class="navbar">
+            <div class="submenuTitle">navigation
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="writing.html">writing</a></li>
+                    <li><a href="tabletop.html">tabletop</a></li>
+                    <li><a href="photography.html">photography</a></li>
+                    <li> <a href="about.html">about</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div id="content">
+
+        <aside>
+            <div class="heading1">TABLETOP<br>RESOURCES</div>
+            <div class="bigsymbol">&#9790;</div>
+            <p>
+                Here's some links to some good places to learn about tabletop RPGs and gaming.
+            </p>
+            <a href="https://dnd.wizards.com/" class="sidelinkbutton">D&D Official Website</a> <br>
+            <a href="https://geekandsundry.com/" class="sidelinkbutton">Geek and Sundry</a><br>
+            <a href="http://www.sjgames.com/gurps/details.html" class="sidelinkbutton">GURPS Official Website</a><br>
+        </aside>
+
+        <article>
+            <h2 class="heading1">Determining damage in GURPS</h2>
+            <div class="subheading">5/18/2021 9:52pm, Joshua Sparks</div>
+            <p>
+                In GURPS, dealing damage to an enemy with a melee weapon is determined by your character's strength.
+                Higher strength allows a character to lift more, endure more damage, and hit harder.
+                Below is a chart that shows the relation between a character's Strength statistic and the damage they deal.
+            </p>
+            <table id="STtoDmg">
+                <colgroup>
+                <col>
+                <col>
+                <col>
+                </colgroup>
+                <thead>
+                    <!-- M6LO3 Demonstrate how to create a table -->
+                  <tr>
+                    <th colspan="3">ST to Damage Chart</th>
+                    <!-- M6LO4 Demonstrate how to span multiple rows or multiple columns in a table -->
+                  </tr>
+                  <tr>
+                    <th>ST</th>
+                    <th>Thrust</th>
+                    <th>Swing</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>1</td>
+                    <td>1d-6</td>
+                    <td>1d-5</td>
+                  </tr>
+                  <tr>
+                    <td>2</td>
+                    <td>1d-6</td>
+                    <td>1d-5</td>
+                  </tr>
+                  <tr>
+                    <td>3</td>
+                    <td>1d-5</td>
+                    <td>1d-4</td>
+                  </tr>
+                  <tr>
+                    <td>4</td>
+                    <td>1d-5</td>
+                    <td>1d-4</td>
+                  </tr>
+                  <tr>
+                    <td>5</td>
+                    <td>1d-4</td>
+                    <td>1d-3</td>
+                  </tr>
+                  <tr>
+                    <td>6</td>
+                    <td>1d-4</td>
+                    <td>1d-3</td>
+                  </tr>
+                  <tr>
+                    <td>7</td>
+                    <td>1d-3</td>
+                    <td>1d-2</td>
+                  </tr>
+                  <tr>
+                    <td>8</td>
+                    <td>1d-3</td>
+                    <td>1d-2</td>
+                  </tr>
+                  <tr>
+                    <td>9</td>
+                    <td>1d-2</td>
+                    <td>1d-1</td>
+                  </tr>
+                  <tr>
+                    <td>10</td>
+                    <td>1d-2</td>
+                    <td>1d</td>
+                  </tr>
+                  <tr>
+                    <td>11</td>
+                    <td>1d-1</td>
+                    <td>1d+1</td>
+                  </tr>
+                  <tr>
+                    <td>12</td>
+                    <td>1d-1</td>
+                    <td>1d+2</td>
+                  </tr>
+                  <tr>
+                    <td>13</td>
+                    <td>1d</td>
+                    <td>2d-1</td>
+                  </tr>
+                  <tr>
+                    <td>14</td>
+                    <td>1d</td>
+                    <td>2d</td>
+                  </tr>
+                  <tr>
+                    <td>15</td>
+                    <td>1d+1</td>
+                    <td>2d+1</td>
+                  </tr>
+                  <tr>
+                    <td>16</td>
+                    <td>1d+1</td>
+                    <td>2d+2</td>
+                  </tr>
+                  <tr>
+                    <td>17</td>
+                    <td>1d+2</td>
+                    <td>3d-1</td>
+                  </tr>
+                  <tr>
+                    <td>18</td>
+                    <td>1d+2</td>
+                    <td>3d</td>
+                  </tr>
+                  <tr>
+                    <td>19</td>
+                    <td>2d-1</td>
+                    <td>3d+1</td>
+                  </tr>
+                  <tr>
+                    <td>20</td>
+                    <td>2d-1</td>
+                    <td>3d+2</td>
+                  </tr>
+                </tbody>
+                </table>
+            <p>paragraph</p>
+        </article>
+
+    </div>
+
+    <footer>
+        <a href="#top" class="sidelinkbutton">jump to top of page</a>
+    </footer>
+</body>
+</html>

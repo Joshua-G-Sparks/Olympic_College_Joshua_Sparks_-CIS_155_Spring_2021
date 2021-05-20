@@ -1,0 +1,145 @@
+<!--
+    Name: Joshua Sparks
+    Date: 5/18/2021
+    Course: CIS 155 18193
+    Instructor: Linda Epps
+    Assignment: Project V3
+    Notes: Home page, this will serve as the landing.
+
+-->
+
+<!doctype html>
+
+<html lang="en">
+<head>
+    <title>RESOLUTE MYSTIC</title>
+    <meta charset="utf-8"/>
+    <meta name="keywords" content="photography, writing, tabletop games, RESOLUTE MYSTIC" />
+    <meta name="author" content="Joshua Sparks"/>
+    <meta name="description" content="RESOLUTE MYSTIC is a class project site written by Joshua Sparks designed to showcase hobbies and interests."/>
+    <meta name="viewport" content="width=device-width"/>
+    <link href="reset.css" rel="stylesheet"/>
+    <link href="styles.css" rel="stylesheet"/>
+    <style>
+        #content > aside {
+            font-family: Arial, Helvetica, sans-serif;
+            font-family: 'Courier New', Courier, monospace;
+            color: white;
+            font-size: 0.9vw;
+            right: 10%;
+            text-align: center;
+            width: 12vw;
+            margin-right: 1vw;
+            margin-left: 1vw;
+        }
+        #content > aside h1 {
+            font-size: 1.2vw;
+        }
+    </style>
+</head>
+
+<body style="background-color: black;">
+    <header>
+        <div class="titleheader" id="top">
+            <h1 id="titletext"><br>RESOLUTE MYSTIC</h1>
+            <!--I have no clue how to middle this text in CSS since it's floated, so have a line break instead. Will come in handy later for non-home page titles.-->
+            <img src="moongraphic.png" alt="moongraphic" class="titleimage" id="moongraphic"/>
+        </div>
+        <nav class="navbar">
+            <div class="submenuTitle">navigation
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="writing.html">writing</a></li>
+                    <li><a href="tabletop.html">tabletop</a></li>
+                    <li><a href="photography.html">photography</a></li>
+                    <li> <a href="about.html">about</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div id="content">
+
+        <aside>
+            <div class="heading1">WHAT IS<br>RESOLUTE MYSTIC?</div>
+            <div class="bigsymbol">&#9790;</div>
+            <p>
+                RESOLUTE MYSTIC is a place for me to showcase my interests, hobbies, and web page building skills.
+            </p>
+            <a href="about.html" class="sidelinkbutton">Would you like to know more?</a>
+            <a href="https://www.youtube.com/watch?v=8FhGOV7fs64" class="sidelinkbutton">Would you like a polar bear?</a>
+            <a href="https://www.youtube.com/watch?v=g0uwGxbmdwQ" class="sidelinkbutton">aesthetic inspiration</a>
+        </aside>
+
+        <article>
+            <h2 class="heading1">Hello World!</h2>
+            <div class="subheading">4/22/2021 6:26pm, Joshua Sparks</div>
+            <p>
+                This will be the main page of this website, serving as a general blog area that I will post whatever to. I may have to optimize this later by
+                having these cards be previews of full length articles that will inhabit their own page, which will in turn make things easier to navigate.
+                This may also include using the sidebar for article navigation, which I like the idea of.
+            </p>
+            <p>
+                The about page will serve as a real development log. Also, don't mind the filler below, it is so I could test the 'jump to top of page' button
+                in the footer, and so you could too. Try it out, it's a somewhat common part of websites like these.
+            </p>
+            <p>
+                My question is if I should increase or reduce the paragraph margin on these article cards. By increasing the margin they will span less of
+                the width of the card as a whole. By reducing or removing the margin, the paragraph will take up the entire card. I think leaving the margin
+                there will allow for other content to be placed later, such as asides or images.
+            </p>
+        </article>
+        <article>
+            <h2 class="heading1">heading</h2>
+            <div class="subheading">subheading</div>
+            <p>paragraph</p>
+            <p>paragraph</p>
+        </article>
+        <article>
+            <h2 class="heading1">heading</h2>
+            <div class="subheading">subheading</div>
+            <p>paragraph</p>
+            <p>paragraph</p>
+        </article>
+        <article>
+            <h2 class="heading1">heading</h2>
+            <div class="subheading">subheading</div>
+            <p>paragraph</p>
+            <p>paragraph</p>
+        </article>
+        <article>
+            <h2 class="heading1">heading</h2>
+            <div class="subheading">subheading</div>
+            <p>paragraph</p>
+            <p>paragraph</p>
+        </article>
+        <article>
+            <h2 class="heading1">heading</h2>
+            <div class="subheading">subheading</div>
+            <p>paragraph</p>
+            <p>paragraph</p>
+        </article>
+
+        <!--
+            Lots of filler content above, this is so that I am able to use the id link that jumps to the top of the page, as described below.
+            Will be removed and replaced with real content as it comes.
+        -->
+    </div>
+
+    <footer>
+        <a href="#top" class="sidelinkbutton">jump to top of page</a>
+        <!--
+            I know I am using the link button class that is designated for the sidebar,
+            I am too lazy to rename it and it is useful outside of it's intended purpose.
+            The font size is too small for a button class, too, so it is staying as
+            'sidelinkbutton' for now.
+
+            PS: This link SHOULD bring the user to the top of the page when there is
+            enough content on the page to create a scroll bar, to test this i will add
+            more test articles in content div
+
+            PPS: Link worked, will leaving sufficient filler material so it can be tested.
+        -->
+    </footer>
+
+</body>
+</html>

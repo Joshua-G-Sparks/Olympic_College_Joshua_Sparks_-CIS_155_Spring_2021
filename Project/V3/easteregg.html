@@ -1,0 +1,89 @@
+<!--
+    Name: Joshua Sparks
+    Date: 5/18/2021
+    Course: CIS 155 18193
+    Instructor: Linda Epps
+    Assignment: Project V3
+    Notes: This is an easter egg page that intentionally looks really bad and 'glitchy'. Just for fun, and lets me experiment with CSS in fun ways.
+
+-->
+
+<!doctype html>
+
+<html lang="en">
+<head>
+    <title>ERROR</title>
+    <meta charset="utf-8"/>
+    <meta name="keywords" content="photography, writing, tabletop games, RESOLUTE MYSTIC" />
+    <meta name="author" content="Joshua Sparks"/>
+    <meta name="description" content="RESOLUTE MYSTIC is a class project site written by Joshua Sparks designed to showcase hobbies and interests."/>
+    <meta name="viewport" content="width=device-width"/>
+    <link href="reset.css" rel="stylesheet"/>
+    <link href="styles.css" rel="stylesheet"/>
+
+    <style>
+    .titleimage:hover {
+        transform: scaleX(-1);
+    }
+    </style>
+</head>
+
+<body style="background-image: url(eastereggbackground.png);">
+
+    <header style="background-color: black;">
+        <div class="titleheader" id="top">
+            <h1 id="titletext" style="text-shadow: 1vw 1vw black;"><br>ERROR</h1>
+            <!--  -->
+            <img src="moongraphic.png" alt="moongraphic" class="titleimage" id="moongraphic"/>
+        </div>
+        <nav class="navbar">
+            <ul>
+                <li style="font-size:2vw"><a href="index.html">home</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="content">
+
+        <aside style="color: black;">
+            <div class="heading1">ERROR</div>
+            <div class="bigsymbol">&#9790;</div>
+            <p>
+                I'd say you're not supposed to be here, but you are.
+            </p>
+            <a href="https://www.youtube.com/watch?v=Td7CBNu0914" class="sidelinkbutton">Ugh. Are you drunk again?</a>
+        </aside>
+
+        <div id="moony">
+          <div class="bigsymbol">&#9790;&#9790;&#9790;<br>&#9790;&#9790;&#9790;<br>&#9790;&#9790;&#9790;</div>
+        </div>
+
+        <article style="background-color: black; color:white">
+            <h2 class="heading1">things i could not fit elsewhere</h2>
+            <div class="subheading">demonstration of their uses</div>
+            <p>paragraph</p>
+            <p style="float:right; display:inline;">i do not follow rules</p>
+            <p>note that, in code, i am below the other text, but still appear above.</p>
+            <p style="clear:both;">to fix this, use the clear property</p>
+        </article>
+        <article style="background-color: black; color:white; background-image: linear-gradient(to right, black, white);">
+            <h2 class="heading1">ERROR</h2>
+            <div class="subheading">ERROR</div>
+            <p>this is a gradient.</p>
+        </article>
+        <article style="background-color: white; color:black">
+            <h2 class="heading1">ERROR</h2>
+            <div class="subheading">ERROR</div>
+            <img src="placeholder.jpg" alt="black square" id="imagemap" usemap="#imagemaptest">
+            <map name="imagemaptest">
+                <area shape="circle" coords="100,100,50" alt="homelink" href="index.html">
+            </map>
+        </article>
+
+    </div>
+
+    <footer>
+        <a href="#top" class="sidelinkbutton">jump to top of page</a>
+    </footer>
+</body>
+</html>
