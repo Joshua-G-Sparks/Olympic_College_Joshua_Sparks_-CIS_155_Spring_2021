@@ -1,0 +1,186 @@
+<!--
+    Name: Joshua Sparks
+    Date: 6/7/2021
+    Course: CIS 155 18193
+    Instructor: Linda Epps
+    Assignment: Project V4
+    Notes: About page, this will talk about what the point of the website is and how the project is coming along.
+
+-->
+
+<!doctype html>
+
+<html lang="en">
+<head>
+    <title>RESOLUTE MYSTIC</title>
+    <meta charset="utf-8"/>
+    <meta name="keywords" content="photography, writing, tabletop games, RESOLUTE MYSTIC" />
+    <meta name="author" content="Joshua Sparks"/>
+    <meta name="description" content="RESOLUTE MYSTIC is a class project site written by Joshua Sparks designed to showcase hobbies and interests."/>
+    <meta name="viewport" content="width=device-width" />
+    <link href="reset.css" rel="stylesheet"/>
+    <link href="styles.css" rel="stylesheet"/>
+
+    <style>
+        aside ol li {
+            margin-bottom: 0.5vw;
+        }
+        body aside {
+        font-family: Arial, Helvetica, sans-serif;
+        font-family: 'Courier New', Courier, monospace;
+        color: white;
+        font-size: 0.9vw;
+        right: 10%;
+        text-align: center;
+        width: 12vw;
+        margin-right: 1vw;
+        margin-left: 1vw;
+        }
+        body aside h1 {
+            font-size: 1.2vw;
+        }
+    </style>
+</head>
+
+<body style="background-color: black;">
+    <header>
+        <div class="titleheader" id="top">
+            <h1 id="titletext">RESOLUTE MYSTIC<br><br>about</h1>
+            <img src="moongraphic.png" alt="moongraphic" class="titleimage" id="moongraphic"/>
+        </div>
+        <nav class="navbar">
+            <div class="submenuTitle">navigation
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="tabletop.html">tabletop</a></li>
+                    <li><a href="photography.html">photography</a></li>
+                    <li> <a href="about.html">about</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <div id="content">
+        <aside>
+            <div class="heading1">RESOLUTE MYSTIC<br>GOALS</div>
+            <div class="bigsymbol">&#9790;</div>
+
+                <p>IN ORDER</p>
+                <ol style="text-align: left;font-size: small;">
+                    <li>Learn aesthetically pleasing web design</li>
+                    <li>Have fun with hobbies</li>
+                    <li>Establish a blog design</li>
+                    <li>Make things look MYSTERIOUS.</li>
+                </ol>
+                <p style="font-size: 14px;">Written for CIS 155 @ Olympic College</p>
+                <a href="easteregg.html" class="sidelinkbutton" id="easteregglink">want to see an ugly page?</a>
+
+        </aside>
+        <article>
+            <h2 class="heading1">RESOLUTE MYSTIC v4</h2>
+            <div class="subheading">6/7/2021 10:09pm, Joshua Sparks</div>
+            <p>
+                I decided to clip the writing page from the website plan, as I didn't have any content to put there that would make sense to complete course objectives. 
+            </p>
+            <p>
+                In the final version of REOLUTE MYSTIC, I have updated the easter egg page with more content display different fun ways to utilize CSS. Did you know you
+                could apply transformations to media elements? I did not, before trying it. I have flipped the controls of an audio element in that page, and it even
+                interfaces with special selectors such as :hover. In addition to the media demonstration, I have included an iframe that places the home page of the
+                website in a small, phone-like width and height. This can be used as a way for desktop users to see how the phone styling looks if they don't want to
+                go through the trouble of accessing the website through a mobile device.
+            </p>
+        </article>
+        <article>
+            <h2 class="heading1">RESOLUTE MYSTIC v3</h2>
+            <div class="subheading">5/19/2021 12:51pm, Joshua Sparks</div>
+            <p>
+                In this iteration of RESOLUTE MYSTIC I have made the website more mobile-friendly using a media query for devices with lower than 600px width. The main features
+                of this mobile view is hiding the sidebar so that the main articles have more space, and the removal of the article paragraph margin so that the text lays
+                across the whole article card. I have also modified the navbar to display as a sort of pulldown menu when tapped in this mobile format.
+            </p>
+            <p>
+                Additionally, I have added the Tabletop page, which currently houses some links to tabletop RPG websites and a small article on determining a character's damage 
+                rating from their Strength statistic in GURPS. To do this, I used a table from the GURPS Lite rules that conveys the concept easily to the reader.
+            </p>
+        </article>
+        <article>
+            <h2 class="heading1">RESOLUTE MYSTIC v2</h2>
+            <div class="subheading">5/4/2021 7:39pm, Joshua Sparks</div>
+            <p>
+                I have added two new pages with this iteration, the new photography page and the easter egg page. The easter egg page is only available through the about page 
+                through the sidebar, just click the 'want to see an ugly page?' link. The easter egg page serves as a place for me to experiment with things and have some fun. I'll be adding more content to that page, though
+                sadly I can't add hidden content without talking about it here on the about page update log.
+            </p>
+            <p>
+                For overall changes, I made it so the side bar on ALL pages are now fixed position, so it will follow the viewport through scrolling. I may revert this at a
+                later date. If you are thinking of reviewing this website, please tell me if you think the following sidebar is a good idea or not!
+            </p>
+            <p>
+                Otherwise, the photography page was fun to make and I think it looks nice. It looks practically how I made it with the wireframe. The most useful thing I learned
+                this module is definitely the grid technique, it makes creating a carefully laid out content article or even an entire page quite easy. I was considering
+                rewriting my entire code to include a grid as the base layout, but I decided it's too much work and how I've done it so far is just fine.
+            </p>
+        </article>
+        <article>
+            <h2 class="heading1">RESOLUTE MYSTIC v1</h2>
+            <div class="subheading">4/22/2021 1:21am, Joshua Sparks</div>
+            <p>I have finally gotten these pages to how I want them to look in a general sense.</p>
+            <p>
+                As a general layout, the front page serves as a landing page with navigation to all planned and current sites. The navbar is consistent through all pages, and I have
+                established this layout you are seeing as a template for the rest of the site pages. The front page may serve as a general blog, each article shows a different
+                card-like structure that houses a heading and subheading. The subheading, as used here, can be used as an author name, date, and time marker.
+            </p>
+            <p>
+                I managed to get this card-like layout by setting the background color to be black and then coloring each element white, then applying copious amounts of margin and padding
+                properties.
+            </p>
+            <p>
+                The sidebar will change throughout the pages, but at the moment it serves as a secondary navbar on the front page that houses a link to the about page as well as a
+                few youtube videos.
+            </p>
+            <p>
+                By far the most annoying thing to get working was the header and header image. It took me about five hours straight of just fiddling with it to manage to get it in place.
+                It does use positioning and float properties not yet taught in the class, something that I did not know was discouraged until after the fact. Good job, me.
+                The footer will have more things in it at some point, at the moment it just serves as a link back to the top of the page.
+            </p>
+            <p>
+                You may notice that links look like buttons when you hover over them. By applying the hover property of links in order to change the background color and text
+                color of said link as you hover over it, you can make it look like a box-like object within the navbar or wherever the link is placed by adding padding around the link.
+                This also makes the link area itself bigger and easier to click on. I think it looks nice, and hope to see this trick used in the other sites!
+            </p>
+        </article>
+        <article>
+            <h2 class="heading1">Attributions</h2>
+            <div class="subheading">Because I can't do everything myself. Links in the listed names.</div>
+            <dl>
+                <dt><a href="https://www.rawpixel.com/image/440416/free-photo-image-moon-celestial-background-space">Crescent Moon</a></dt>
+                <dd>The crescent moon in the header is a public domain image, originally captured by NASA and enhanced by rawpixel.</dd>
+            </dl>
+            <dl>
+                <dt><a href="https://commons.wikimedia.org/wiki/File:Solid_white_bordered.svg">Black bordered white box</a></dt>
+                <dd>The background image in the easter egg / debug page.</dd>
+            </dl>
+            <dl>
+                <dt><a href="https://www.warehouse23.com/products/SJG31-0004">GURPS Lite rules</a></dt>
+                <dd>I display information from the free GURPS Lite rules on the Tabletop page. These rules are stated to be freely distributable with proper accreditation.</dd>
+            </dl>
+            <dl>
+                <dt><strong>Music by Kevin MacLeod</strong></dt>
+                <dd>
+                    With a Creation by Kevin MacLeod
+                    Link: https://incompetech.filmmusic.io/song/4637-with-a-creation
+                    License: https://filmmusic.io/standard-license
+                </dd>
+            </dl>
+        </article>
+    </div>
+    <footer>
+        <a href="#top" class="sidelinkbutton">jump to top of page</a>
+        <!--
+            I know I am using the link button class that is designated for the sidebar,
+            I am too lazy to rename it and it is useful outside of it's intended purpose.
+            The font size is too small for a button class, too, so it is staying as
+            'sidelinkbutton' for now.
+        -->
+    </footer>
+</body>
+</html>
